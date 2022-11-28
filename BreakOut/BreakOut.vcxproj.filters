@@ -51,9 +51,12 @@
     <ClCompile Include="Particle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Console.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+=======
+>>>>>>> d8a2e22f3480f6ccd1a95f3df1a8a1ef83ffb969
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\packages\raylib.4.0.0.7\build\native\include\raylib.h">
@@ -98,9 +101,12 @@
     <ClInclude Include="Particle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Console.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+=======
+>>>>>>> d8a2e22f3480f6ccd1a95f3df1a8a1ef83ffb969
   </ItemGroup>
   <ItemGroup>
     <None Include="..\packages.config">
