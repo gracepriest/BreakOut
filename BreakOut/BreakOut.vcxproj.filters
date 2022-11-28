@@ -1,191 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="fonts">
-      <UniqueIdentifier>{bd0cc7f4-b8ff-4abd-90f3-89430ad48774}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="graphics">
-      <UniqueIdentifier>{b29f7f1f-0c57-4b25-8eaf-85156115d067}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="sounds">
-      <UniqueIdentifier>{47f12b4c-6a73-4b90-a318-e353beb1110f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="lib">
-      <UniqueIdentifier>{6d51526d-9945-4f4b-86db-c5789c50d409}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Heart.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="states.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="states.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Paddle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ball.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Brick.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Heart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Particle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="Console.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-=======
->>>>>>> d8a2e22f3480f6ccd1a95f3df1a8a1ef83ffb969
+    <ClInclude Include="..\packages\raylib.4.0.0.7\build\native\include\raylib.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="BaseState.h" />
+    <ClInclude Include="Brick.h" />
+    <ClInclude Include="CommonHeaders.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="Fonts.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Heart.h" />
+    <ClInclude Include="Paddle.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="Sounds.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="States.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\packages\raylib.4.0.0.7\build\native\include\raylib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="State.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="States.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CommonHeaders.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Fonts.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sounds.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Paddle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ball.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Brick.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Heart.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Particle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="Console.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-=======
->>>>>>> d8a2e22f3480f6ccd1a95f3df1a8a1ef83ffb969
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\brick-hit-1.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\brick-hit-2.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\confirm.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\high_score.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\hurt.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\music.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\no-select.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\paddle_hit.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\pause.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\recover.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\score.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\select.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\victory.wav" />
+    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\wall_hit.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\packages.config">
-      <Filter>Source Files</Filter>
-    </None>
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\arrows.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\background.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\blocks.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\breakout.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\breakout_big.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\hearts.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\particle.png" />
+    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\ui.png" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\fonts\font.ttf">
-      <Filter>fonts</Filter>
-    </Font>
+    <Font Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\fonts\font.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\brick-hit-1.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\brick-hit-2.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\confirm.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\high_score.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\hurt.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\music.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\no-select.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\paddle_hit.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\pause.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\recover.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\score.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\select.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\victory.wav">
-      <Filter>sounds</Filter>
-    </Media>
-    <Media Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\sounds\wall_hit.wav">
-      <Filter>sounds</Filter>
-    </Media>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\arrows.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\background.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\blocks.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\breakout.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\breakout_big.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\hearts.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\particle.png">
-      <Filter>graphics</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\graphics\ui.png">
-      <Filter>graphics</Filter>
-    </Image>
+    <None Include="..\packages.config" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

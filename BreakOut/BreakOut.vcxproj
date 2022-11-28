@@ -141,10 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Brick.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="Console.cpp" />
-=======
->>>>>>> d8a2e22f3480f6ccd1a95f3df1a8a1ef83ffb969
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Heart.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -158,10 +155,7 @@
     <ClInclude Include="BaseState.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="CommonHeaders.h" />
-<<<<<<< HEAD
     <ClInclude Include="Console.h" />
-=======
->>>>>>> d8a2e22f3480f6ccd1a95f3df1a8a1ef83ffb969
     <ClInclude Include="Fonts.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Graphics.h" />
@@ -174,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\packages.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\..\..\Downloads\src2 (1)\breakout-master\breakout0\fonts\font.ttf" />
@@ -207,11 +202,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\raylib.4.0.0.7\build\native\raylib.targets" Condition="Exists('..\packages\raylib.4.0.0.7\build\native\raylib.targets')" />
+    <Import Project="..\packages\raylib.4.2.0.2\build\native\raylib.targets" Condition="Exists('..\packages\raylib.4.2.0.2\build\native\raylib.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\raylib.4.0.0.7\build\native\raylib.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\raylib.4.0.0.7\build\native\raylib.targets'))" />
+    <Error Condition="!Exists('..\packages\raylib.4.2.0.2\build\native\raylib.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\raylib.4.2.0.2\build\native\raylib.targets'))" />
   </Target>
 </Project>
