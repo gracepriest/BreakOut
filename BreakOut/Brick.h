@@ -143,7 +143,7 @@ std::vector<Brick> static createMap(int level)
 
 		for (auto& item : brick)
 		{
-			item.brickImage = Bricks[itemCounter *4];
+			item.brickImage = Bricks[itemCounter * 4];
 			item.color = itemCounter + 1;
 			item.x += Hspace;
 			item.y += Vspace;

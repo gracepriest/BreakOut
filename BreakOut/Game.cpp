@@ -105,7 +105,7 @@ void render()
 	Texture2D text = LoadTextureFromImage(q2);
 	rec = { 0,0,85,25 };
 	DrawTextureQuad(text, Vector2{ 1,1 }, Vector2{ 0,0, }, rec, WHITE);
-
+	//2
 	//void DrawTexturePro(Texture2D texture, Rectangle source, Rectangle dest, Vector2 origin, float rotation, Color tint);           // Draw a part of a texture defined by a rectangle with 'pro' parameters
 	//DrawTexturePro(text, rec, Rectangle{ 0,0,75,20}, Vector2{-100,-50 }, 0, WHITE);
 	//DrawTexture(text, 250, 100, WHITE);

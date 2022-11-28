@@ -177,12 +177,17 @@ void PlayState::Init()
 void PlayState::Render()
 {
 	string strScore = "Score: " + to_string(args.score);
+	//string strScore1 = "Level Score: " + to_string(args.levelScore);
+	//string strScore2 = "Current Score: " + to_string(args.currentScore);
 	
 	if (isPause == true)
 	{
 		DrawText("PAUSED", 500, WINDOW_HEIGHT / 2,EXLARGE, WHITE);
 	}
 	DrawText(strScore.c_str(), 900, 0, LARGE, WHITE);
+	/*DrawText(strScore1.c_str(), 900, 50, LARGE, WHITE);
+	DrawText(strScore2.c_str(), 900, 500, LARGE, WHITE);*/
+
 	player.Render();
 	ball.Render();
 	
@@ -223,6 +228,20 @@ void PlayState::Update(State& state) // scene logic
 	{
 		isPause = false;
 		PlaySound(PAUSE);
+
+		
+	}
+	if (IsKeyPressed(KEY_F1))
+	{
+		currentLevel++;
+		args.currentScore = 0;
+		args.levelScore = 0;
+		for (auto& item : particle)
+		{
+			item.active = false;
+		}
+		state.SetState(ServeState::getInstance(), args);
+		state.Init();
 	}
 	if (!isPause)
 	{
@@ -376,9 +395,9 @@ int PlayState::Load(int& level)
 	if (level < currentLevel)
 	{
 		level = currentLevel;
-		brick = createMap(currentLevel);
+		brick =  createMap(currentLevel);
 	}
-	return brick.size();
+	return brick.size() + args.currentScore;
 }
 
 		

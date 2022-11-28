@@ -7,9 +7,9 @@ class State;
 struct Args
 {
 	 int currentScore=0;
-	 int health;
+	 int health=0;
 	 int score=0;
-	 int levelScore;
+	 int levelScore=0;
 };
 
 
